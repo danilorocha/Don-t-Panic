@@ -12,6 +12,7 @@
 
 @synthesize testeBotao;
 @synthesize botao;
+@synthesize managedObjectContext = __managedObjectContext;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -63,14 +64,16 @@
 
 
 -(IBAction)entrou:(id)sender{
-    
+    UIAlertView *alerta = [[UIAlertView alloc] initWithTitle:@"Alert!" message:@"The Trakking will begin" delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil];
     
     if (apertado == TRUE){
-            testeBotao.text = @"Botão Desativado";
+        //[alerta release];
+        testeBotao.text = @"Botão Desativado";
         apertado = FALSE;
     }        
 
     else{
+        [alerta show];
         testeBotao.text = @"Botão Ativado";
         apertado = TRUE;
     }    

@@ -22,6 +22,7 @@
 
 @property(nonatomic, retain) IBOutlet UILabel *testeBotao;
 @property(nonatomic, retain) IBOutlet UIButton *botao;
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
 
 -(IBAction)entrou:(id)sender;

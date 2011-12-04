@@ -1,8 +1,8 @@
 //
-//  ContactDetailViewController.m
+//  DetailViewController.m
 //  DontPanic
 //
-//  Created by Douglas Barbosa on 09/11/11.
+//  Created by Douglas Barbosa on 03/12/11.
 //  Copyright (c) 2011 UFBA. All rights reserved.
 //
 
@@ -14,17 +14,9 @@
 
 @implementation ContactDetailViewController
 
+
 @synthesize detailItem = _detailItem;
 @synthesize detailDescriptionLabel = _detailDescriptionLabel;
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
 
 #pragma mark - Managing the detail item
 
@@ -41,7 +33,7 @@
 - (void)configureView
 {
     // Update the user interface for the detail item.
-    
+
     if (self.detailItem) {
         self.detailDescriptionLabel.text = [self.detailItem description];
     }
@@ -59,6 +51,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
     [self configureView];
 }
 

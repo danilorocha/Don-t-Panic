@@ -13,7 +13,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "ADB7F3BC146AD1970095DF8C"
+               BlueprintIdentifier = "ADCC3F95148AEDAC0088199D"
                BuildableName = "DontPanic.app"
                BlueprintName = "DontPanic"
                ReferencedContainer = "container:DontPanic.xcodeproj">
@@ -31,7 +31,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "ADB7F3E8146AD1980095DF8C"
+               BlueprintIdentifier = "ADCC3FBE148AEDAC0088199D"
                BuildableName = "DontPanicTests.octest"
                BlueprintName = "DontPanicTests"
                ReferencedContainer = "container:DontPanic.xcodeproj">
@@ -41,7 +41,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "ADB7F3BC146AD1970095DF8C"
+            BlueprintIdentifier = "ADCC3F95148AEDAC0088199D"
             BuildableName = "DontPanic.app"
             BlueprintName = "DontPanic"
             ReferencedContainer = "container:DontPanic.xcodeproj">
@@ -59,7 +59,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "ADB7F3BC146AD1970095DF8C"
+            BlueprintIdentifier = "ADCC3F95148AEDAC0088199D"
             BuildableName = "DontPanic.app"
             BlueprintName = "DontPanic"
             ReferencedContainer = "container:DontPanic.xcodeproj">
@@ -77,7 +77,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "ADB7F3BC146AD1970095DF8C"
+            BlueprintIdentifier = "ADCC3F95148AEDAC0088199D"
             BuildableName = "DontPanic.app"
             BlueprintName = "DontPanic"
             ReferencedContainer = "container:DontPanic.xcodeproj">
