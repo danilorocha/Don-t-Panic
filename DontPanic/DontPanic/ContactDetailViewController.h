@@ -8,11 +8,31 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ContactDetailViewController : UIViewController
+@class ContactViewController;
+@interface ContactDetailViewController : UIViewController{
+    
+    UITextField *name;
+    UITextField *phone;
+    UITextField *email;
+    
+    ContactViewController *parentController;
+    NSManagedObject *system;
+    
+}
 
 
 @property (strong, nonatomic) id detailItem;
 
-@property (strong, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@property (nonatomic, retain) IBOutlet UITextField *name;
+@property (nonatomic, retain) IBOutlet UITextField *phone;
+@property (nonatomic, retain) IBOutlet UITextField *email;
+@property (nonatomic, retain) ContactViewController *parentController;
+@property (nonatomic, retain) NSManagedObject *system;
+
+- (id)initWithParentController:(ContactViewController *) aParentController system:(NSManagedObject *) aSystem;
+
+- (IBAction)save:(id)sender;
+
+-(void)setParent:(ContactViewController *)parent;
 
 @end
