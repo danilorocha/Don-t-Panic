@@ -7,25 +7,48 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MessageUI/MessageUI.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface RedButtonViewController : UIViewController{
+@interface RedButtonViewController : UIViewController <MFMailComposeViewControllerDelegate, MFMessageComposeViewControllerDelegate, CLLocationManagerDelegate> {
 
-    UILabel *testeBotao;
+    UILabel *trakingInfo;
     UIButton *botao;
     
     BOOL apertado;
-
-
-
+    BOOL views;
+    NSString * trackCode;
+    
+    CLLocationManager *locationManager;
+    CLLocation *startingPoint;
+    
+    float batteryLevel;
+    
 }
 
 
-@property(nonatomic, retain) IBOutlet UILabel *testeBotao;
+@property(nonatomic, retain) IBOutlet UILabel *trakingInfo;
 @property(nonatomic, retain) IBOutlet UIButton *botao;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, retain) NSString *trackCode;
+@property (nonatomic, retain) CLLocationManager *locationManager;
+@property (nonatomic, retain) CLLocation *startingPoint;
 
 
--(IBAction)entrou:(id)sender;
+- (IBAction)sendInfo:(id)sender;
+- (NSMutableArray *)arrayOfPhones;
+- (NSMutableArray *)arrayOfEmails;
+- (BOOL)loginValidation;
+- (void)sendSMSWithTrackCode:(NSString *)code;
+- (void)sendEmailWithTrackCode:(NSString *)code;
+- (void)setTrackInfo;
+- (void)changeStatus;
+- (NSString *)getUserName;
+- (void)getTrackCode;
+- (void)queryTrackCode;
+- (void)startLocate;
+- (void)stopLocate;
+- (void)getBatteryLevel;
 
 
 @end

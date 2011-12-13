@@ -52,11 +52,6 @@
     // e.g. self.myOutlet = nil;
 }
 
-- (void)showDetailView{
-    ContactDetailViewController *detailView = [[ContactDetailViewController alloc] initWithParentController:self system:nil];
-    [self presentModalViewController:detailView animated:YES];
-    // verificar isso
-}
 
 -(void)segue{
     [self performSegueWithIdentifier:@"showDetail" sender:self];
@@ -112,14 +107,6 @@
     return [sectionInfo numberOfObjects];
 }
 
-/*
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSManagedObject *system = [[self fetchedResultsController] objectAtIndexPath:indexPath];
-    
-    //ContactDetailViewController *detailView = [[ContactDetailViewController alloc] initWithParentController:self system:system];
-    //[self presentModalViewController:detailView animated:YES];
-}  */  
-    
 
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -133,14 +120,6 @@
     return cell;
 }
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -164,8 +143,9 @@
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // The table view should not be re-orderable.
-    return NO;
+    return YES;
 }
+
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
@@ -209,11 +189,7 @@
     
 	NSError *error = nil;
 	if (![self.fetchedResultsController performFetch:&error]) {
-	    /*
-	     Replace this implementation with code to handle the error appropriately.
 
-	     abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. 
-	     */
 	    NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
 	    abort();
 	}
@@ -271,15 +247,6 @@
     [self.tableView endUpdates];
 }
 
-/*
-// Implementing the above methods to update the table view in response to individual changes may have performance implications if a large number of changes are made simultaneously. If this proves to be an issue, you can instead just implement controllerDidChangeContent: which notifies the delegate that all section and object changes have been processed. 
- 
- - (void)controllerDidChangeContent:(NSFetchedResultsController *)controller
-{
-    // In the simplest, most efficient, case, reload the table view.
-    [self.tableView reloadData];
-}
- */
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
@@ -293,9 +260,20 @@
     NSEntityDescription *entity = [[self.fetchedResultsController fetchRequest] entity];
     NSManagedObject *newContact = [NSEntityDescription insertNewObjectForEntityForName:[entity name] inManagedObjectContext:context];
     
-    [newContact setValue:name forKey:@"name"];
-    [newContact setValue:phone forKey:@"phone"];
-    [newContact setValue:email forKey:@"email"];
+    if((name.length != 0) && (phone.length != 0) && (email.length != 0)){
+    
+        [newContact setValue:name forKey:@"name"];
+        [newContact setValue:phone forKey:@"phone"];
+        [newContact setValue:email forKey:@"email"];
+        
+    }  
+    
+    else{
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Forgot something?" message:@"You must fill all fields!" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+        
+        [alert show];
+        
+    }
     
     return newContact;
 }

@@ -25,15 +25,6 @@
 
 #pragma mark - Managing the detail item
 
-- (id)initWithParentController:(ContactViewController *)aParentController system:(NSManagedObject *)aSystem{
-    if ((self = [super init])) {
-        self.parentController = aParentController;
-        self.system = aSystem;
-    }
-    return self;
-    
-    
-}
 
 - (void)setDetailItem:(id)newDetailItem
 {
@@ -98,19 +89,37 @@
     NSString *tempPhone = nil;
     NSString *tempEmail = nil;
     
-    //if(parentController != nil){
     if (system != nil) {
         tempName = [NSString stringWithString:(NSString *)[system valueForKey:@"name"]];
         tempPhone = [NSString stringWithString:(NSString *)[system valueForKey:@"phone"]];
         tempEmail = [NSString stringWithString:(NSString *)[system valueForKey:@"email"]];
         
-        [system setValue:name.text forKey:@"name"];
-        [system setValue:phone.text forKey:@"phone"];
-        [system setValue:email.text forKey:@"email"];
+        if((name.text.length != 0) && (phone.text.length != 0) && (email.text.length != 0)){
         
-    }
-    else{
-        tempSystem = [parentController insertContactWithName:name.text phone:phone.text email:email.text];
+            [system setValue:name.text forKey:@"name"];
+            [system setValue:phone.text forKey:@"phone"];
+            [system setValue:email.text forKey:@"email"];
+        } 
+        
+        else{
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Forgot something?" message:@"You must fill all fields!" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+            
+            [alert show];
+            
+        }
+        
+    } 
+    if(system == nil){
+        if((name.text.length != 0) && (phone.text.length != 0) && (email.text.length != 0)){
+            tempSystem = [parentController insertContactWithName:name.text phone:phone.text email:email.text];
+        }
+        else{
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Forgot something?" message:@"You must fill all fields!" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+            
+            [alert show];
+            
+        }
+    
     }
     errorText = [parentController saveContext];
     
@@ -120,20 +129,34 @@
         
         if (tempSystem != nil) {
             [[parentController.fetchedResultsController managedObjectContext] deleteObject:tempSystem];
-        } 
-        else {
+        } else {
             [system setValue:tempName forKey:@"name"];
             [system setValue:tempPhone forKey:@"phone"];
             [system setValue:tempEmail forKey:@"email"];
         }
-    } 
-    else {
-        [self dismissModalViewControllerAnimated:YES];
+    } else {
+        NSLog(@"entrou no else");
+            [self dismissModalViewControllerAnimated:YES];
     }
+    [name resignFirstResponder];
+    [phone resignFirstResponder];
+    [email resignFirstResponder];
     
-    //}
+}
+
+
+-(BOOL)textFieldShouldReturn:(UITextField*)textField{
     
+    [textField resignFirstResponder];
     
+    return TRUE;
+}
+
+
+-(IBAction)removerTeclado:(id)sender{
+    [name resignFirstResponder];
+    [phone resignFirstResponder];
+    [email resignFirstResponder];
     
 }
 

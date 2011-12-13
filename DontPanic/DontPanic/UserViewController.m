@@ -12,6 +12,9 @@
 
 @synthesize passText;
 @synthesize userText;
+@synthesize userName;
+
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -32,20 +35,22 @@
 
 #pragma mark - View lifecycle
 
-/*
-// Implement loadView to create a view hierarchy programmatically, without using a nib.
-- (void)loadView
-{
-}
-*/
 
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
+    NSString *path = [self saveFilePath];
+    
+    BOOL fileExists = [[NSFileManager defaultManager] fileExistsAtPath:path];
+    
+    if (fileExists) {
+        NSArray *values = [[NSArray alloc] initWithContentsOfFile:path];
+            userText.text = [values objectAtIndex:0];
+            passText.text = [values objectAtIndex:1];
+    }
+    
     [super viewDidLoad];
+    
 }
-*/
 
 - (void)viewDidUnload
 {
@@ -72,5 +77,117 @@
     
     return TRUE;
 }
+ 
+
+- (IBAction)login{
+    
+    NSArray *values = [[NSArray alloc] initWithObjects:userText.text, passText.text, nil];
+    
+    if ((userText.text.length != 0) && (passText.text.length != 0)) {
+        [self sendUserWithName:userText.text andPassword:passText.text];
+        
+        NSLog(@"pegou %@", userName);
+        
+        if ([userText.text isEqual:userName]) {
+            NSLog(@"eh igual");
+            [values writeToFile:[self saveFilePath] atomically:YES];
+            
+            NSString *alertTitle = [NSString stringWithFormat:@"Welcome %@!", userName];
+            
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle: alertTitle message:@"You are logged in." delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+            
+            [alert show];
+            
+            
+        }
+        else{
+            NSLog(@"nao eh igual");
+            if(userName != nil){
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Wrong user or password!" message:@"Try again!" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+            
+            [alert show];
+            }   
+            
+            userText.text = @"";
+            passText.text = @"";
+            
+        }
+        
+        [userText resignFirstResponder];
+        [passText resignFirstResponder];
+        
+    }
+    else{
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Forgot something?" message:@"You must fill all fields!" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+        
+        [alert show];
+        
+    }
+    
+}
+
+- (IBAction)logout{
+    NSString *path = [self saveFilePath];
+    
+    NSError *error;
+    
+    [[NSFileManager defaultManager] removeItemAtPath:path error:&error];
+    
+    userText.text = @"";
+    passText.text = @"";
+        
+}
+
+- (NSString *)saveFilePath{
+    NSArray *pathArray = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    
+    return [[pathArray objectAtIndex:0] stringByAppendingPathComponent:@"loggeduser.plist"];
+}
+
+- (void)sendUserWithName:(NSString *)user andPassword:(NSString *)password {  
+       
+    NSString *url = [NSString stringWithFormat:@"http://localhost:8888/dontpanic/userController.php"];
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
+    
+    [request setURL:[NSURL URLWithString:url]];
+    [request setHTTPMethod:@"POST"];
+    
+    NSMutableData *body = [NSMutableData data];
+    
+    [body appendData:[[NSString stringWithFormat:@"user=%@&password=%@", user, password] dataUsingEncoding:NSUTF8StringEncoding]];
+    
+    [request setHTTPBody:body];
+    
+    
+    NSHTTPURLResponse *response = nil;
+    NSError *error = [[NSError alloc] init];
+    
+    [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
+    
+    if(response == nil){
+        userName = nil;
+        NSLog(@"entrou no else");
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error!" message:@"Unable to contact server." delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+            
+        [alert show];
+            
+    }
+    
+    else{
+        [self getUserData];
+        NSArray *substring = [NSArray arrayWithArray:[userName componentsSeparatedByString:@" "]];
+        userName = [substring objectAtIndex:0];
+    }    
+    
+}
+
+-(void)getUserData{
+    NSURL *url = [NSURL URLWithString:@"http://localhost:8888/dontpanic/teste.php"];
+    userName = [NSString stringWithContentsOfURL:url
+                                             encoding:NSUTF8StringEncoding error:nil];
+}
+
+
+
 
 @end

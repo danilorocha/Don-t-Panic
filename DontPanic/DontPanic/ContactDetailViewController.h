@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @class ContactViewController;
-@interface ContactDetailViewController : UIViewController{
+@interface ContactDetailViewController : UIViewController <UINavigationControllerDelegate>{
     
     UITextField *name;
     UITextField *phone;
@@ -29,10 +29,11 @@
 @property (nonatomic, retain) ContactViewController *parentController;
 @property (nonatomic, retain) NSManagedObject *system;
 
-- (id)initWithParentController:(ContactViewController *) aParentController system:(NSManagedObject *) aSystem;
-
 - (IBAction)save:(id)sender;
 
--(void)setParent:(ContactViewController *)parent;
+- (IBAction)removerTeclado:(id)sender;
+
+- (void)setParent:(ContactViewController *)parent;
+
 
 @end

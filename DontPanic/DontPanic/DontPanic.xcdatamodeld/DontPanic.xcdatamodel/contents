@@ -5,7 +5,12 @@
         <attribute name="name" attributeType="String" defaultValueString="Uknown" indexed="YES" syncable="YES"/>
         <attribute name="phone" attributeType="String" defaultValueString="123456" syncable="YES"/>
     </entity>
+    <entity name="Validation" syncable="YES">
+        <attribute name="password" attributeType="String" syncable="YES"/>
+        <attribute name="user" attributeType="String" indexed="YES" syncable="YES"/>
+    </entity>
     <elements>
         <element name="Contact" positionX="79" positionY="198" width="128" height="90"/>
+        <element name="Validation" positionX="-1980" positionY="-972" width="128" height="75"/>
     </elements>
 </model>

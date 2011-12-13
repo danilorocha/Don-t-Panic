@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ADADABB41492627900EC49CF /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADADABB21492627900EC49CF /* MainStoryboard.storyboard */; };
+		ADAF693A1494DF9200FE07FC /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ADAF69391494DF9200FE07FC /* Icon.png */; };
+		ADAF693C1494E47600FE07FC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = ADAF693B1494E47600FE07FC /* Default.png */; };
 		ADCC3F9B148AEDAC0088199D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADCC3F9A148AEDAC0088199D /* UIKit.framework */; };
 		ADCC3F9D148AEDAC0088199D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADCC3F9C148AEDAC0088199D /* Foundation.framework */; };
 		ADCC3F9F148AEDAC0088199D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADCC3F9E148AEDAC0088199D /* CoreGraphics.framework */; };
@@ -14,7 +17,6 @@
 		ADCC3FA7148AEDAC0088199D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ADCC3FA5148AEDAC0088199D /* InfoPlist.strings */; };
 		ADCC3FA9148AEDAC0088199D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCC3FA8148AEDAC0088199D /* main.m */; };
 		ADCC3FAD148AEDAC0088199D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCC3FAC148AEDAC0088199D /* AppDelegate.m */; };
-		ADCC3FB0148AEDAC0088199D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADCC3FAE148AEDAC0088199D /* MainStoryboard.storyboard */; };
 		ADCC3FB3148AEDAC0088199D /* DontPanic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ADCC3FB1148AEDAC0088199D /* DontPanic.xcdatamodeld */; };
 		ADCC3FB6148AEDAC0088199D /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCC3FB5148AEDAC0088199D /* ContactViewController.m */; };
 		ADCC3FB9148AEDAC0088199D /* ContactDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCC3FB8148AEDAC0088199D /* ContactDetailViewController.m */; };
@@ -30,6 +32,8 @@
 		ADCC3FF1148AF1B40088199D /* redbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = ADCC3FED148AF1B40088199D /* redbutton.png */; };
 		ADCC3FF2148AF1B40088199D /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = ADCC3FEE148AF1B40088199D /* back.png */; };
 		ADCC3FF3148AF1B40088199D /* info_24.png in Resources */ = {isa = PBXBuildFile; fileRef = ADCC3FEF148AF1B40088199D /* info_24.png */; };
+		ADD4E4EA14913C2A00285E90 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADD4E4E914913C2A00285E90 /* MessageUI.framework */; };
+		ADD4E4ED14913C3500285E90 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADD4E4EC14913C3500285E90 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +47,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ADADABB31492627900EC49CF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = ../../backup/DontPanic6/DontPanic/en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		ADAF69391494DF9200FE07FC /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
+		ADAF693B1494E47600FE07FC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
 		ADCC3F96148AEDAC0088199D /* DontPanic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DontPanic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADCC3F9A148AEDAC0088199D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		ADCC3F9C148AEDAC0088199D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -54,7 +61,6 @@
 		ADCC3FAA148AEDAC0088199D /* DontPanic-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DontPanic-Prefix.pch"; sourceTree = "<group>"; };
 		ADCC3FAB148AEDAC0088199D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ADCC3FAC148AEDAC0088199D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		ADCC3FAF148AEDAC0088199D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		ADCC3FB2148AEDAC0088199D /* DontPanic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DontPanic.xcdatamodel; sourceTree = "<group>"; };
 		ADCC3FB4148AEDAC0088199D /* ContactViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactViewController.h; sourceTree = "<group>"; };
 		ADCC3FB5148AEDAC0088199D /* ContactViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactViewController.m; sourceTree = "<group>"; };
@@ -74,6 +80,10 @@
 		ADCC3FED148AF1B40088199D /* redbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redbutton.png; sourceTree = "<group>"; };
 		ADCC3FEE148AF1B40088199D /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		ADCC3FEF148AF1B40088199D /* info_24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info_24.png; sourceTree = "<group>"; };
+		ADD4E4E914913C2A00285E90 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		ADD4E4EC14913C3500285E90 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		ADD4E4EE14913C5A00285E90 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		ADD4E4F014913C6300285E90 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +91,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADD4E4ED14913C3500285E90 /* CoreLocation.framework in Frameworks */,
+				ADD4E4EA14913C2A00285E90 /* MessageUI.framework in Frameworks */,
 				ADCC3F9B148AEDAC0088199D /* UIKit.framework in Frameworks */,
 				ADCC3F9D148AEDAC0088199D /* Foundation.framework in Frameworks */,
 				ADCC3F9F148AEDAC0088199D /* CoreGraphics.framework in Frameworks */,
@@ -124,6 +136,10 @@
 		ADCC3F99148AEDAC0088199D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ADD4E4EC14913C3500285E90 /* CoreLocation.framework */,
+				ADD4E4E914913C2A00285E90 /* MessageUI.framework */,
+				ADD4E4F014913C6300285E90 /* MessageUI.framework */,
+				ADD4E4EE14913C5A00285E90 /* CoreLocation.framework */,
 				ADCC3F9A148AEDAC0088199D /* UIKit.framework */,
 				ADCC3F9C148AEDAC0088199D /* Foundation.framework */,
 				ADCC3F9E148AEDAC0088199D /* CoreGraphics.framework */,
@@ -187,7 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				ADCC3FB1148AEDAC0088199D /* DontPanic.xcdatamodeld */,
-				ADCC3FAE148AEDAC0088199D /* MainStoryboard.storyboard */,
+				ADADABB21492627900EC49CF /* MainStoryboard.storyboard */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -196,6 +212,8 @@
 			isa = PBXGroup;
 			children = (
 				ADCC3FEC148AF1B40088199D /* first.png */,
+				ADAF693B1494E47600FE07FC /* Default.png */,
+				ADAF69391494DF9200FE07FC /* Icon.png */,
 				ADCC3FED148AF1B40088199D /* redbutton.png */,
 				ADCC3FEE148AF1B40088199D /* back.png */,
 				ADCC3FEF148AF1B40088199D /* info_24.png */,
@@ -275,11 +293,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADCC3FA7148AEDAC0088199D /* InfoPlist.strings in Resources */,
-				ADCC3FB0148AEDAC0088199D /* MainStoryboard.storyboard in Resources */,
 				ADCC3FF0148AF1B40088199D /* first.png in Resources */,
 				ADCC3FF1148AF1B40088199D /* redbutton.png in Resources */,
 				ADCC3FF2148AF1B40088199D /* back.png in Resources */,
 				ADCC3FF3148AF1B40088199D /* info_24.png in Resources */,
+				ADADABB41492627900EC49CF /* MainStoryboard.storyboard in Resources */,
+				ADAF693A1494DF9200FE07FC /* Icon.png in Resources */,
+				ADAF693C1494E47600FE07FC /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,20 +363,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		ADADABB21492627900EC49CF /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADADABB31492627900EC49CF /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
 		ADCC3FA5148AEDAC0088199D /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				ADCC3FA6148AEDAC0088199D /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		ADCC3FAE148AEDAC0088199D /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ADCC3FAF148AEDAC0088199D /* en */,
-			);
-			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 		ADCC3FCA148AEDAC0088199D /* InfoPlist.strings */ = {

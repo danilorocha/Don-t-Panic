@@ -17,9 +17,7 @@
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
-- (void)showDetailView;
 - (NSString *)saveContext;
 - (NSManagedObject *)insertContactWithName:(NSString *) name phone:(NSString *) phone email:(NSString *)email;
-//- (NSString *)validationErrorText:(NSError *)error;
 
 @end
