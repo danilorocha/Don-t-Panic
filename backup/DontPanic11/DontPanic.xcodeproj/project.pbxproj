@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ADADABB41492627900EC49CF /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADADABB21492627900EC49CF /* MainStoryboard.storyboard */; };
+		ADAF693A1494DF9200FE07FC /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ADAF69391494DF9200FE07FC /* Icon.png */; };
+		ADAF693C1494E47600FE07FC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = ADAF693B1494E47600FE07FC /* Default.png */; };
+		ADCC3F9B148AEDAC0088199D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADCC3F9A148AEDAC0088199D /* UIKit.framework */; };
+		ADCC3F9D148AEDAC0088199D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADCC3F9C148AEDAC0088199D /* Foundation.framework */; };
+		ADCC3F9F148AEDAC0088199D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADCC3F9E148AEDAC0088199D /* CoreGraphics.framework */; };
+		ADCC3FA1148AEDAC0088199D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADCC3FA0148AEDAC0088199D /* CoreData.framework */; };
+		ADCC3FA7148AEDAC0088199D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ADCC3FA5148AEDAC0088199D /* InfoPlist.strings */; };
+		ADCC3FA9148AEDAC0088199D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCC3FA8148AEDAC0088199D /* main.m */; };
+		ADCC3FAD148AEDAC0088199D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCC3FAC148AEDAC0088199D /* AppDelegate.m */; };
+		ADCC3FB3148AEDAC0088199D /* DontPanic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ADCC3FB1148AEDAC0088199D /* DontPanic.xcdatamodeld */; };
+		ADCC3FB6148AEDAC0088199D /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCC3FB5148AEDAC0088199D /* ContactViewController.m */; };
+		ADCC3FB9148AEDAC0088199D /* ContactDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCC3FB8148AEDAC0088199D /* ContactDetailViewController.m */; };
+		ADCC3FC1148AEDAC0088199D /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADCC3FC0148AEDAC0088199D /* SenTestingKit.framework */; };
+		ADCC3FC2148AEDAC0088199D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADCC3F9A148AEDAC0088199D /* UIKit.framework */; };
+		ADCC3FC3148AEDAC0088199D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADCC3F9C148AEDAC0088199D /* Foundation.framework */; };
+		ADCC3FC4148AEDAC0088199D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADCC3FA0148AEDAC0088199D /* CoreData.framework */; };
+		ADCC3FCC148AEDAC0088199D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ADCC3FCA148AEDAC0088199D /* InfoPlist.strings */; };
+		ADCC3FCF148AEDAC0088199D /* DontPanicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCC3FCE148AEDAC0088199D /* DontPanicTests.m */; };
+		ADCC3FE9148AF18C0088199D /* RedButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCC3FE6148AF18C0088199D /* RedButtonViewController.m */; };
+		ADCC3FEA148AF18C0088199D /* UserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCC3FE8148AF18C0088199D /* UserViewController.m */; };
+		ADCC3FF0148AF1B40088199D /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = ADCC3FEC148AF1B40088199D /* first.png */; };
+		ADCC3FF1148AF1B40088199D /* redbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = ADCC3FED148AF1B40088199D /* redbutton.png */; };
+		ADCC3FF2148AF1B40088199D /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = ADCC3FEE148AF1B40088199D /* back.png */; };
+		ADCC3FF3148AF1B40088199D /* info_24.png in Resources */ = {isa = PBXBuildFile; fileRef = ADCC3FEF148AF1B40088199D /* info_24.png */; };
+		ADD4E4EA14913C2A00285E90 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADD4E4E914913C2A00285E90 /* MessageUI.framework */; };
+		ADD4E4ED14913C3500285E90 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADD4E4EC14913C3500285E90 /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ADCC3FC5148AEDAC0088199D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADCC3F8D148AEDAC0088199D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADCC3F95148AEDAC0088199D;
+			remoteInfo = DontPanic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ADADABB31492627900EC49CF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = ../../backup/DontPanic6/DontPanic/en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		ADAF69391494DF9200FE07FC /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
+		ADAF693B1494E47600FE07FC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
+		ADCC3F96148AEDAC0088199D /* DontPanic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DontPanic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADCC3F9A148AEDAC0088199D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		ADCC3F9C148AEDAC0088199D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		ADCC3F9E148AEDAC0088199D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		ADCC3FA0148AEDAC0088199D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		ADCC3FA4148AEDAC0088199D /* DontPanic-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DontPanic-Info.plist"; sourceTree = "<group>"; };
+		ADCC3FA6148AEDAC0088199D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ADCC3FA8148AEDAC0088199D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ADCC3FAA148AEDAC0088199D /* DontPanic-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DontPanic-Prefix.pch"; sourceTree = "<group>"; };
+		ADCC3FAB148AEDAC0088199D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ADCC3FAC148AEDAC0088199D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ADCC3FB2148AEDAC0088199D /* DontPanic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DontPanic.xcdatamodel; sourceTree = "<group>"; };
+		ADCC3FB4148AEDAC0088199D /* ContactViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactViewController.h; sourceTree = "<group>"; };
+		ADCC3FB5148AEDAC0088199D /* ContactViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactViewController.m; sourceTree = "<group>"; };
+		ADCC3FB7148AEDAC0088199D /* ContactDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactDetailViewController.h; sourceTree = "<group>"; };
+		ADCC3FB8148AEDAC0088199D /* ContactDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactDetailViewController.m; sourceTree = "<group>"; };
+		ADCC3FBF148AEDAC0088199D /* DontPanicTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DontPanicTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADCC3FC0148AEDAC0088199D /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		ADCC3FC9148AEDAC0088199D /* DontPanicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DontPanicTests-Info.plist"; sourceTree = "<group>"; };
+		ADCC3FCB148AEDAC0088199D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ADCC3FCD148AEDAC0088199D /* DontPanicTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DontPanicTests.h; sourceTree = "<group>"; };
+		ADCC3FCE148AEDAC0088199D /* DontPanicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DontPanicTests.m; sourceTree = "<group>"; };
+		ADCC3FE5148AF18C0088199D /* RedButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedButtonViewController.h; sourceTree = "<group>"; };
+		ADCC3FE6148AF18C0088199D /* RedButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedButtonViewController.m; sourceTree = "<group>"; };
+		ADCC3FE7148AF18C0088199D /* UserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserViewController.h; sourceTree = "<group>"; };
+		ADCC3FE8148AF18C0088199D /* UserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserViewController.m; sourceTree = "<group>"; };
+		ADCC3FEC148AF1B40088199D /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		ADCC3FED148AF1B40088199D /* redbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redbutton.png; sourceTree = "<group>"; };
+		ADCC3FEE148AF1B40088199D /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		ADCC3FEF148AF1B40088199D /* info_24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info_24.png; sourceTree = "<group>"; };
+		ADD4E4E914913C2A00285E90 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		ADD4E4EC14913C3500285E90 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		ADD4E4EE14913C5A00285E90 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		ADD4E4F014913C6300285E90 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADCC3F93148AEDAC0088199D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADD4E4ED14913C3500285E90 /* CoreLocation.framework in Frameworks */,
+				ADD4E4EA14913C2A00285E90 /* MessageUI.framework in Frameworks */,
+				ADCC3F9B148AEDAC0088199D /* UIKit.framework in Frameworks */,
+				ADCC3F9D148AEDAC0088199D /* Foundation.framework in Frameworks */,
+				ADCC3F9F148AEDAC0088199D /* CoreGraphics.framework in Frameworks */,
+				ADCC3FA1148AEDAC0088199D /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADCC3FBB148AEDAC0088199D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADCC3FC1148AEDAC0088199D /* SenTestingKit.framework in Frameworks */,
+				ADCC3FC2148AEDAC0088199D /* UIKit.framework in Frameworks */,
+				ADCC3FC3148AEDAC0088199D /* Foundation.framework in Frameworks */,
+				ADCC3FC4148AEDAC0088199D /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ADCC3F8B148AEDAC0088199D = {
+			isa = PBXGroup;
+			children = (
+				ADCC3FA2148AEDAC0088199D /* DontPanic */,
+				ADCC3FC7148AEDAC0088199D /* DontPanicTests */,
+				ADCC3F99148AEDAC0088199D /* Frameworks */,
+				ADCC3F97148AEDAC0088199D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ADCC3F97148AEDAC0088199D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADCC3F96148AEDAC0088199D /* DontPanic.app */,
+				ADCC3FBF148AEDAC0088199D /* DontPanicTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADCC3F99148AEDAC0088199D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADD4E4EC14913C3500285E90 /* CoreLocation.framework */,
+				ADD4E4E914913C2A00285E90 /* MessageUI.framework */,
+				ADD4E4F014913C6300285E90 /* MessageUI.framework */,
+				ADD4E4EE14913C5A00285E90 /* CoreLocation.framework */,
+				ADCC3F9A148AEDAC0088199D /* UIKit.framework */,
+				ADCC3F9C148AEDAC0088199D /* Foundation.framework */,
+				ADCC3F9E148AEDAC0088199D /* CoreGraphics.framework */,
+				ADCC3FA0148AEDAC0088199D /* CoreData.framework */,
+				ADCC3FC0148AEDAC0088199D /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ADCC3FA2148AEDAC0088199D /* DontPanic */ = {
+			isa = PBXGroup;
+			children = (
+				ADCC3FAB148AEDAC0088199D /* AppDelegate.h */,
+				ADCC3FAC148AEDAC0088199D /* AppDelegate.m */,
+				ADCC3FB4148AEDAC0088199D /* ContactViewController.h */,
+				ADCC3FB5148AEDAC0088199D /* ContactViewController.m */,
+				ADCC3FB7148AEDAC0088199D /* ContactDetailViewController.h */,
+				ADCC3FB8148AEDAC0088199D /* ContactDetailViewController.m */,
+				ADCC3FE5148AF18C0088199D /* RedButtonViewController.h */,
+				ADCC3FE6148AF18C0088199D /* RedButtonViewController.m */,
+				ADCC3FE7148AF18C0088199D /* UserViewController.h */,
+				ADCC3FE8148AF18C0088199D /* UserViewController.m */,
+				ADCC3FF8148B21590088199D /* Resources */,
+				ADCC3FF9148B21AA0088199D /* Images */,
+				ADCC3FA3148AEDAC0088199D /* Supporting Files */,
+			);
+			path = DontPanic;
+			sourceTree = "<group>";
+		};
+		ADCC3FA3148AEDAC0088199D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ADCC3FA4148AEDAC0088199D /* DontPanic-Info.plist */,
+				ADCC3FA5148AEDAC0088199D /* InfoPlist.strings */,
+				ADCC3FA8148AEDAC0088199D /* main.m */,
+				ADCC3FAA148AEDAC0088199D /* DontPanic-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ADCC3FC7148AEDAC0088199D /* DontPanicTests */ = {
+			isa = PBXGroup;
+			children = (
+				ADCC3FCD148AEDAC0088199D /* DontPanicTests.h */,
+				ADCC3FCE148AEDAC0088199D /* DontPanicTests.m */,
+				ADCC3FC8148AEDAC0088199D /* Supporting Files */,
+			);
+			path = DontPanicTests;
+			sourceTree = "<group>";
+		};
+		ADCC3FC8148AEDAC0088199D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ADCC3FC9148AEDAC0088199D /* DontPanicTests-Info.plist */,
+				ADCC3FCA148AEDAC0088199D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ADCC3FF8148B21590088199D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ADCC3FB1148AEDAC0088199D /* DontPanic.xcdatamodeld */,
+				ADADABB21492627900EC49CF /* MainStoryboard.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		ADCC3FF9148B21AA0088199D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				ADCC3FEC148AF1B40088199D /* first.png */,
+				ADAF693B1494E47600FE07FC /* Default.png */,
+				ADAF69391494DF9200FE07FC /* Icon.png */,
+				ADCC3FED148AF1B40088199D /* redbutton.png */,
+				ADCC3FEE148AF1B40088199D /* back.png */,
+				ADCC3FEF148AF1B40088199D /* info_24.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ADCC3F95148AEDAC0088199D /* DontPanic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADCC3FD2148AEDAC0088199D /* Build configuration list for PBXNativeTarget "DontPanic" */;
+			buildPhases = (
+				ADCC3F92148AEDAC0088199D /* Sources */,
+				ADCC3F93148AEDAC0088199D /* Frameworks */,
+				ADCC3F94148AEDAC0088199D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DontPanic;
+			productName = DontPanic;
+			productReference = ADCC3F96148AEDAC0088199D /* DontPanic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ADCC3FBE148AEDAC0088199D /* DontPanicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADCC3FD5148AEDAC0088199D /* Build configuration list for PBXNativeTarget "DontPanicTests" */;
+			buildPhases = (
+				ADCC3FBA148AEDAC0088199D /* Sources */,
+				ADCC3FBB148AEDAC0088199D /* Frameworks */,
+				ADCC3FBC148AEDAC0088199D /* Resources */,
+				ADCC3FBD148AEDAC0088199D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADCC3FC6148AEDAC0088199D /* PBXTargetDependency */,
+			);
+			name = DontPanicTests;
+			productName = DontPanicTests;
+			productReference = ADCC3FBF148AEDAC0088199D /* DontPanicTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ADCC3F8D148AEDAC0088199D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = UFBA;
+			};
+			buildConfigurationList = ADCC3F90148AEDAC0088199D /* Build configuration list for PBXProject "DontPanic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = ADCC3F8B148AEDAC0088199D;
+			productRefGroup = ADCC3F97148AEDAC0088199D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADCC3F95148AEDAC0088199D /* DontPanic */,
+				ADCC3FBE148AEDAC0088199D /* DontPanicTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADCC3F94148AEDAC0088199D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADCC3FA7148AEDAC0088199D /* InfoPlist.strings in Resources */,
+				ADCC3FF0148AF1B40088199D /* first.png in Resources */,
+				ADCC3FF1148AF1B40088199D /* redbutton.png in Resources */,
+				ADCC3FF2148AF1B40088199D /* back.png in Resources */,
+				ADCC3FF3148AF1B40088199D /* info_24.png in Resources */,
+				ADADABB41492627900EC49CF /* MainStoryboard.storyboard in Resources */,
+				ADAF693A1494DF9200FE07FC /* Icon.png in Resources */,
+				ADAF693C1494E47600FE07FC /* Default.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADCC3FBC148AEDAC0088199D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADCC3FCC148AEDAC0088199D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ADCC3FBD148AEDAC0088199D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADCC3F92148AEDAC0088199D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADCC3FA9148AEDAC0088199D /* main.m in Sources */,
+				ADCC3FAD148AEDAC0088199D /* AppDelegate.m in Sources */,
+				ADCC3FB3148AEDAC0088199D /* DontPanic.xcdatamodeld in Sources */,
+				ADCC3FB6148AEDAC0088199D /* ContactViewController.m in Sources */,
+				ADCC3FB9148AEDAC0088199D /* ContactDetailViewController.m in Sources */,
+				ADCC3FE9148AF18C0088199D /* RedButtonViewController.m in Sources */,
+				ADCC3FEA148AF18C0088199D /* UserViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADCC3FBA148AEDAC0088199D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADCC3FCF148AEDAC0088199D /* DontPanicTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADCC3FC6148AEDAC0088199D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADCC3F95148AEDAC0088199D /* DontPanic */;
+			targetProxy = ADCC3FC5148AEDAC0088199D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ADADABB21492627900EC49CF /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADADABB31492627900EC49CF /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		ADCC3FA5148AEDAC0088199D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADCC3FA6148AEDAC0088199D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		ADCC3FCA148AEDAC0088199D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADCC3FCB148AEDAC0088199D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ADCC3FD0148AEDAC0088199D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		ADCC3FD1148AEDAC0088199D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADCC3FD3148AEDAC0088199D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DontPanic/DontPanic-Prefix.pch";
+				INFOPLIST_FILE = "DontPanic/DontPanic-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		ADCC3FD4148AEDAC0088199D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DontPanic/DontPanic-Prefix.pch";
+				INFOPLIST_FILE = "DontPanic/DontPanic-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		ADCC3FD6148AEDAC0088199D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DontPanic.app/DontPanic";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DontPanic/DontPanic-Prefix.pch";
+				INFOPLIST_FILE = "DontPanicTests/DontPanicTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		ADCC3FD7148AEDAC0088199D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DontPanic.app/DontPanic";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DontPanic/DontPanic-Prefix.pch";
+				INFOPLIST_FILE = "DontPanicTests/DontPanicTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ADCC3F90148AEDAC0088199D /* Build configuration list for PBXProject "DontPanic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADCC3FD0148AEDAC0088199D /* Debug */,
+				ADCC3FD1148AEDAC0088199D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADCC3FD2148AEDAC0088199D /* Build configuration list for PBXNativeTarget "DontPanic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADCC3FD3148AEDAC0088199D /* Debug */,
+				ADCC3FD4148AEDAC0088199D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADCC3FD5148AEDAC0088199D /* Build configuration list for PBXNativeTarget "DontPanicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADCC3FD6148AEDAC0088199D /* Debug */,
+				ADCC3FD7148AEDAC0088199D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ADCC3FB1148AEDAC0088199D /* DontPanic.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ADCC3FB2148AEDAC0088199D /* DontPanic.xcdatamodel */,
+			);
+			currentVersion = ADCC3FB2148AEDAC0088199D /* DontPanic.xcdatamodel */;
+			path = DontPanic.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = ADCC3F8D148AEDAC0088199D /* Project object */;
+}
